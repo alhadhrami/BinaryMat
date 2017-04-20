@@ -8,6 +8,11 @@ BinaryMat::BinaryMat(const cv::Mat* mat)
   setMat(mat);
 }
 
+BinaryMat::~BinaryMat()
+{
+  delete bytes;
+}
+
 void BinaryMat::setMat(const cv::Mat* mat)
 {    
   setVariables(mat->rows, mat->cols);

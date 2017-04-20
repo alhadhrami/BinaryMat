@@ -15,6 +15,7 @@ class BinaryMat
 {
 public:
   BinaryMat(const cv::Mat* mat);
+  ~BinaryMat();
   void setMat(const cv::Mat* mat);
   bool matFromBytes(cv::Mat* mat);
   int rows();
