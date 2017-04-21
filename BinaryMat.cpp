@@ -11,6 +11,7 @@ BinaryMat::BinaryMat(const cv::Mat* mat)
 BinaryMat::~BinaryMat()
 {
   delete [] bytes;
+}
 
 void BinaryMat::setMat(const cv::Mat* mat)
 {    
